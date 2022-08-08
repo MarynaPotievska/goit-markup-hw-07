@@ -21,9 +21,9 @@
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <nav class="nav">
-          <a href="./index.html" class="logo nav__logo">
+          <a href="./index.html" class="logo logo__nav">
             <span class="logo__web">Web</span>
             <span class="logo__studio logo__studio--dark">Studio</span>
           </a>
@@ -71,21 +71,21 @@
 
           <ul class="filters">
             <li class="filters__item">
-              <button type="button" class="filters__btn filters__btn--current">
+              <button type="button" class="btn filters__btn filters__btn--current">
                 Все
               </button>
             </li>
             <li class="filters__item">
-              <button type="button" class="filters__btn">Веб-сайти</button>
+              <button type="button" class="btn filters__btn">Веб-сайти</button>
             </li>
             <li class="filters__item">
-              <button type="button" class="filters__btn">Додатки</button>
+              <button type="button" class="btn filters__btn">Додатки</button>
             </li>
             <li class="filters__item">
-              <button type="button" class="filters__btn">Дизайн</button>
+              <button type="button" class="btn filters__btn">Дизайн</button>
             </li>
             <li class="filters__item">
-              <button type="button" class="filters__btn">Маркетинг</button>
+              <button type="button" class="btn filters__btn">Маркетинг</button>
             </li>
           </ul>
 
@@ -342,8 +342,8 @@
             <span class="logo__studio logo__studio--light">Studio</span>
           </a>
 
-          <address>
-            <p class="physical-address">м. Київ, пр-т Лесі Українки, 26</p>
+          <address class="footer__address">
+            <p class="footer__physical-address">м. Київ, пр-т Лесі Українки, 26</p>
             <ul>
               <li class="footer__contact-item">
                 <a href="mailto:info@devstudio.com" class="footer__contact-link"
@@ -360,11 +360,11 @@
         </div>
 
         <div class="footer__box">
-          <h2 class="footer__title">приєднуйтесь</h2>
+          <h2 class="subtitle__footer subtitle">приєднуйтесь</h2>
           <ul class="links-list">
             <li class="links-list__item">
-              <a href="" class="icon-link" aria-label="Посилання на інстаграм">
-                <svg class="social-icon">
+              <a href="" class="links-list__link links-list__link--dark" aria-label="Посилання на інстаграм">
+                <svg class="links-list__social-icon">
                   <use href="./images/icons.svg#instagram2"></use>
                 </svg>
               </a>
@@ -372,10 +372,10 @@
             <li class="links-list__item">
               <a
                 href=""
-                class="icon-link"
+                class="links-list__link links-list__link--dark"
                 aria-label="Посилання на твіттер"
               >
-                <svg class="social-icon">
+                <svg class="links-list__social-icon">
                   <use href="./images/icons.svg#twitter2"></use>
                 </svg>
               </a>
@@ -383,10 +383,10 @@
             <li class="links-list__item">
               <a
                 href=""
-                class="icon-link"
+                class="links-list__link links-list__link--dark"
                 aria-label="Посилання на фейсбук"
               >
-                <svg class="social-icon">
+                <svg class="links-list__social-icon">
                   <use href="./images/icons.svg#facebook2"></use>
                 </svg>
               </a>
@@ -394,10 +394,10 @@
             <li class="links-list__item">
               <a
                 href=""
-                class="icon-link"
+                class="links-list__link links-list__link--dark"
                 aria-label="Посилання на лінкд-ін"
               >
-                <svg class="social-icon">
+                <svg class="links-list__social-icon">
                   <use href="./images/icons.svg#linkedin2"></use>
                 </svg>
               </a>
@@ -406,17 +406,17 @@
         </div>
 
         <div class="footer__box">
-          <h2 class="footer__title">Підпишіться на розсилку</h2>
-          <form name="footer-subscribe-form">
+          <h2 class="subtitle__footer subtitle">Підпишіться на розсилку</h2>
+          <form name="subscribe form">
             <input
               type="email"
               name="subscriber-email"
               placeholder="E-mail"
-              class="subscribe-form-field"
+              class="subscribe__field"
             />
-            <button type="submit" class="subscribe-btn">
-              <span class="subscribe-btn-text">Підписатися</span>
-              <svg class="subscribe-btn-icon" width="24" height="24">
+            <button type="submit" class="btn subscribe__btn">
+              <span class="subscribe__btn--desc">Підписатися</span>
+              <svg class="subscribe__icon" width="24" height="24">
                 <use href="./images/icons.svg#subscribe"></use>
               </svg>
             </button>
