@@ -24,36 +24,18 @@
 
     &:last-child {
         margin-bottom: 0;
-    }
-
-    &:hover .label__icon,
-    &:focus .label__icon {
-        fill: var(--cl-accent);
-    }
-
-    &:hover .application-field {
-        border-color: var(--cl-accent);
-    }
+    }    
   }
   
-    .label__name,
-    .application__field::placeholder {
-        margin-bottom: 4px;
-        font-size: 12px;
-        line-height: calc(14 / 12);
-        letter-spacing: 0.01em;
-        color: var(--ft-cl-sec);
-    }
+  .label__name,
+  .application__field::placeholder {
+      margin-bottom: 4px;
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.01em;
+      color: var(--ft-cl-sec);
+  }
   
-    .label__icon {
-        position: absolute;
-        bottom: 11px;
-        left: 12px;
-        width: 18px;
-        height: 18px;
-        transition: fill var(--trans-actions);
-    }
-    
   .application__field {
     height: 40px;
     padding-left: 42px;
@@ -63,6 +45,25 @@
     outline: transparent;
     cursor: pointer;
     transition: border-color var(--trans-actions);
+
+    &:hover ,
+    &:focus-within  {
+        border-color: var(--cl-accent);
+    }
+
+    &:hover + .label__icon,
+    &:focus-within + .label__icon {
+        fill: var(--cl-accent);
+    }
+  }
+    
+  .label__icon {
+      position: absolute;
+      bottom: 11px;
+      left: 12px;
+      width: 18px;
+      height: 18px;        
+      transition: fill var(--trans-actions);      
   }
     
   .comment {
